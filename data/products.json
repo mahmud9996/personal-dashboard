@@ -194,6 +194,30 @@
         "trend": 95
       },
       "id": "auto-0"
+    },
+    {
+      "name": "Mobile Game Grip + Cooling Stand",
+      "category": "Grip / Accessory",
+      "price_bdt": 380,
+      "margin_est": "high",
+      "demand_score": 77,
+      "competition": "low",
+      "trend": "stable",
+      "image": "assets/img/trigger.jpg",
+      "why": "কমপিটিশন কম, ইম্পালস বাই। গ্লাভস/কুলারের সাথে বান্ডল ক্রস-সেল।",
+      "risk": "স্ট্যান্ডঅলোন ডিমান্ড মাঝারি",
+      "channels": [
+        "Instagram",
+        "TikTok",
+        "Facebook"
+      ],
+      "metrics": {
+        "demand": 77,
+        "margin": 83,
+        "competition_ease": 82,
+        "trend": 66
+      },
+      "id": "auto-1"
     }
   ],
   "analytics_note": "স্কোর ০-১০০ স্কেলে (Hermes রিসার্চ + gearaboo.com সেলস ডেটা + ২০২৬ গ্লোবাল ট্রেন্ড থেকে এস্টিমেট)। কালার: সবুজ=ভালো, হলুদ=মিড, লাল=দুর্বল। নতুন ক্যান্ডিডেট প্রতিদিন রিসার্চ থেকে যোগ হয়।"
