@@ -170,6 +170,30 @@
         "trend": 95
       },
       "id": "auto-2026-07-24-0"
+    },
+    {
+      "name": "Magnetic Semiconductor Cooler (RGB + Display)",
+      "category": "Cooling / Trending",
+      "price_bdt": 1100,
+      "margin_est": "medium-high",
+      "demand_score": 91,
+      "competition": "low",
+      "trend": "up",
+      "image": "assets/img/cooler2.jpg",
+      "why": "২০২৬ গ্লোবাল #১ ট্রেন্ড (semiconductor cooler)। ম্যাগনেটিক + RGB — Instagram/TikTok ভাইরাল পটেনশিয়াল।",
+      "risk": "সাপ্লাই ডিপেন্ডেন্সি; দাম ফ্লাকচুয়েট",
+      "channels": [
+        "TikTok",
+        "Instagram",
+        "Facebook"
+      ],
+      "metrics": {
+        "demand": 91,
+        "margin": 78,
+        "competition_ease": 80,
+        "trend": 95
+      },
+      "id": "auto-0"
     }
   ],
   "analytics_note": "স্কোর ০-১০০ স্কেলে (Hermes রিসার্চ + gearaboo.com সেলস ডেটা + ২০২৬ গ্লোবাল ট্রেন্ড থেকে এস্টিমেট)। কালার: সবুজ=ভালো, হলুদ=মিড, লাল=দুর্বল। নতুন ক্যান্ডিডেট প্রতিদিন রিসার্চ থেকে যোগ হয়।"
