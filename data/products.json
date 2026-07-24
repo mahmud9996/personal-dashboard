@@ -1,6 +1,7 @@
 {
   "updated": "2026-07-24",
-  "research_topic": "মোবাইল গেমিং অ্যাক্সেসরিজ (PUBG Mobile / গেমার নিশে)",
+  "research_topic": "মোবাইল গেমিং অ্যাক্সেসরিজ (PUBG/BGMI Mobile) — বাংলাদেশ মার্কেট + ২০২৬ গ্লোবাল ট্রেন্ড",
+  "trend_note": "২০২৬-এ 'phone cooler' (semiconductor/thermoelectric) সার্চ ইন্টারেস্ট পিকে (Google Trends 100)। বাংলাদেশে গরম আবহাওয়ায় কুলার + গ্লাভস + ট্রিগার ডিমান্ড বাড়ছে। সোর্স: Alibaba buying-guide 2026, mobile.com.bd, daraz.com.bd।",
   "candidates": [
     {
       "id": "p1",
@@ -11,10 +12,20 @@
       "demand_score": 82,
       "competition": "medium",
       "trend": "up",
+      "image": "assets/img/glove.jpg",
       "why": "সুইটপ্রুফ + অ্যান্টি-স্লিপ — PUBG মোবাইল প্লেয়ারদের জন্য সবচেয়ে সস্তা এন্ট্রি প্রোডাক্ট। ইম্পালস বাই।",
       "risk": "কপি মার্কেটে সস্তা; দামে প্রতিযোগিতা বেশি",
-      "channels": ["Instagram", "TikTok", "Facebook"],
-      "metrics": { "demand": 82, "margin": 75, "competition_ease": 60, "trend": 70 }
+      "channels": [
+        "Instagram",
+        "TikTok",
+        "Facebook"
+      ],
+      "metrics": {
+        "demand": 82,
+        "margin": 75,
+        "competition_ease": 60,
+        "trend": 70
+      }
     },
     {
       "id": "p2",
@@ -22,13 +33,23 @@
       "category": "Cooling / Hardware",
       "price_bdt": 1099,
       "margin_est": "medium-high",
-      "demand_score": 74,
+      "demand_score": 88,
       "competition": "low",
       "trend": "up",
-      "why": "ফোন ওভারহিটিং বড় সমস্যা বাংলাদেশে (গরম আবহাওয়া)। কুলারে কমপিটিশন কম, AOV বেশি।",
-      "risk": "স্টক আউট থাকে প্রায়ই (দেখা গেছে gearaboo.com-এ Out of stock)",
-      "channels": ["Instagram", "Facebook", "TikTok"],
-      "metrics": { "demand": 74, "margin": 80, "competition_ease": 78, "trend": 76 }
+      "image": "assets/img/cooler1.jpg",
+      "why": "ফোন ওভারহিটিং বড় সমস্যা বাংলাদেশে (গরম আবহাওয়া)। ২০২৬-এ কুলার গ্লোবালি সবচেয়ে হট ট্রেন্ড। কমপিটিশন কম, AOV বেশি।",
+      "risk": "স্টক আউট থাকে প্রায়ই (gearaboo.com-এ দেখা গেছে Out of stock)",
+      "channels": [
+        "Instagram",
+        "Facebook",
+        "TikTok"
+      ],
+      "metrics": {
+        "demand": 88,
+        "margin": 80,
+        "competition_ease": 78,
+        "trend": 92
+      }
     },
     {
       "id": "p3",
@@ -39,11 +60,117 @@
       "demand_score": 79,
       "competition": "medium",
       "trend": "stable",
+      "image": "assets/img/trigger.jpg",
       "why": "৬-ফিঙ্গার অ্যাডভান্টেজ — কনভার্সন ভালো। দাম মিড-রেঞ্জ, ভলিউম ভালো।",
       "risk": "ডেলিভারি রিটার্ন রেট একটু বেশি হতে পারে (ফিটিং ইস্যু)",
-      "channels": ["TikTok", "Instagram", "Facebook"],
-      "metrics": { "demand": 79, "margin": 72, "competition_ease": 65, "trend": 68 }
+      "channels": [
+        "TikTok",
+        "Instagram",
+        "Facebook"
+      ],
+      "metrics": {
+        "demand": 79,
+        "margin": 72,
+        "competition_ease": 65,
+        "trend": 68
+      }
+    },
+    {
+      "id": "p4",
+      "name": "Magnetic Semiconductor Phone Cooler (TL07-style)",
+      "category": "Cooling / Trending",
+      "price_bdt": 1100,
+      "margin_est": "medium-high",
+      "demand_score": 90,
+      "competition": "low",
+      "trend": "up",
+      "image": "assets/img/cooler2.jpg",
+      "why": "২০২৬ গ্লোবাল ট্রেন্ড #১ (Alibaba guide)। Magnetic + RGB + digital display — ভিজুয়ালি ইন্সটাগ্রাম/TikTok-এ ভাইরাল হওয়ার পটেনশিয়াল। gearaboo-এর আছে TL07 কুলার।",
+      "risk": "সাপ্লাই চেইন ডিপেন্ডেন্সি; দাম ফ্লাকচুয়েট",
+      "channels": [
+        "TikTok",
+        "Instagram",
+        "Facebook"
+      ],
+      "metrics": {
+        "demand": 90,
+        "margin": 78,
+        "competition_ease": 80,
+        "trend": 95
+      }
+    },
+    {
+      "id": "p5",
+      "name": "Low-Latency Wireless Gaming Earbuds",
+      "category": "Audio / Companion",
+      "price_bdt": 1550,
+      "margin_est": "medium",
+      "demand_score": 71,
+      "competition": "high",
+      "trend": "up",
+      "image": "assets/img/glove.jpg",
+      "why": "গেমিং সেটআপের সাথে কমপ্লিমেন্টারি। AirPods কপি ইতিমধ্যে gearaboo-এ বিক্রি হচ্ছে — কাস্টমার বেস আছে।",
+      "risk": "অডিও মার্কেটে ব্র্যান্ড কপি প্রতিযোগিতা বেশি",
+      "channels": [
+        "Instagram",
+        "Facebook",
+        "TikTok"
+      ],
+      "metrics": {
+        "demand": 71,
+        "margin": 65,
+        "competition_ease": 45,
+        "trend": 74
+      }
+    },
+    {
+      "id": "p6",
+      "name": "Ergonomic Mobile Game Grip + Stand",
+      "category": "Grip / Accessory",
+      "price_bdt": 350,
+      "margin_est": "high",
+      "demand_score": 76,
+      "competition": "low",
+      "trend": "stable",
+      "image": "assets/img/trigger.jpg",
+      "why": "কমপিটিশন কম, ইম্পালস বাই। গ্লাভস/কুলারের সাথে বান্ডল করা যায় (ক্রস-সেল)।",
+      "risk": "স্ট্যান্ডঅলোন ডিমান্ড মাঝারি",
+      "channels": [
+        "Instagram",
+        "TikTok",
+        "Facebook"
+      ],
+      "metrics": {
+        "demand": 76,
+        "margin": 82,
+        "competition_ease": 82,
+        "trend": 66
+      }
+    },
+    {
+      "name": "Magnetic Semiconductor Cooler (RGB + Display)",
+      "category": "Cooling / Trending",
+      "price_bdt": 1100,
+      "margin_est": "medium-high",
+      "demand_score": 91,
+      "competition": "low",
+      "trend": "up",
+      "image": "assets/img/cooler2.jpg",
+      "why": "২০২৬ গ্লোবাল #১ ট্রেন্ড (semiconductor cooler)। ম্যাগনেটিক + RGB — Instagram/TikTok ভাইরাল পটেনশিয়াল।",
+      "risk": "সাপ্লাই ডিপেন্ডেন্সি; দাম ফ্লাকচুয়েট",
+      "channels": [
+        "TikTok",
+        "Instagram",
+        "Facebook"
+      ],
+      "metrics": {
+        "demand": 91,
+        "margin": 78,
+        "competition_ease": 80,
+        "trend": 95
+      },
+      "id": "auto-2026-07-24-0"
     }
   ],
-  "analytics_note": "স্কোর ০-১০০ স্কেলে (Hermes রিসার্চ + gearaboo.com সেলস ডেটা থেকে এস্টিমেট)। কালার: সবুজ=ভালো, হলুদ=মিড, লাল=দুর্বল।"
+  "analytics_note": "স্কোর ০-১০০ স্কেলে (Hermes রিসার্চ + gearaboo.com সেলস ডেটা + ২০২৬ গ্লোবাল ট্রেন্ড থেকে এস্টিমেট)। কালার: সবুজ=ভালো, হলুদ=মিড, লাল=দুর্বল। নতুন ক্যান্ডিডেট প্রতিদিন রিসার্চ থেকে যোগ হয়।"
 }

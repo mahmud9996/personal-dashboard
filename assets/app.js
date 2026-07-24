@@ -20,62 +20,64 @@ async function loadAll(){
 
 function renderProducts(d){
   if(!d) return "<div class='card'>ডেটা লোড হয়নি</div>";
-  let cards = d.candidates.map(c=>{
+  const cards = d.candidates.map(c=>{
     const m = c.metrics;
-    const bars = [
-      ["Demand", m.demand],
-      ["Margin", m.margin],
-      ["Competition Ease", m.competition_ease],
-      ["Trend", m.trend]
-    ].map(([l,v])=>`
-      <div class="bar-row"><div class="bar-label">${l}</div>
-      <div class="bar-track"><div class="bar-fill" style="width:${v}%;background:${scoreColor(v)}"></div></div>
-      <div style="width:32px;text-align:right;color:var(--muted)">${v}</div></div>`).join("");
-    return `<div class="card">
-      <div class="card-head"><div class="dot ${c.trend==='up'?'emerald':c.trend==='down'?'rose':'amber'}"></div>
-        <h3 style="font-size:14px">${esc(c.name)}</h3>
-        <span class="pill ${c.trend}">${c.trend}</span></div>
-      <div style="font-size:11px;color:var(--muted);margin-bottom:6px">${esc(c.category)} • ৳${c.price_bdt} • margin: ${esc(c.margin_est)} • competition: ${esc(c.competition)}</div>
-      ${bars}
-      <div style="margin-top:10px;font-size:12px"><span style="color:var(--emerald)">✓</span> ${esc(c.why)}</div>
-      <div style="margin-top:4px;font-size:12px"><span style="color:var(--rose)">⚠</span> ${esc(c.risk)}</div>
-      <div style="margin-top:6px">${c.channels.map(ch=>`<span class="tag">${esc(ch)}</span>`).join("")}</div>
+    const trendCls = c.trend==='up'?'b-up':c.trend==='down'?'b-down':'b-stable';
+    const img = c.image || "assets/img/glove.jpg";
+    return `<div class="prod-card">
+      <img class="prod-img" src="${esc(img)}" alt="${esc(c.name)}" loading="lazy" onerror="this.style.display='none'">
+      <div class="prod-body">
+        <div class="prod-top">
+          <div class="prod-name">${esc(c.name)}</div>
+          <span class="prod-price">৳${c.price_bdt}</span>
+        </div>
+        <div class="prod-cat">${esc(c.category)} • margin: ${esc(c.margin_est)} • competition: ${esc(c.competition)} <span class="badge-trend ${trendCls}">${c.trend}</span></div>
+        <div class="prod-why"><span style="color:var(--emerald)">✓</span> ${esc(c.why)}</div>
+        <div class="prod-risk"><span>⚠</span> ${esc(c.risk)}</div>
+        <div class="score-mini">
+          <span class="score-chip">Demand <b>${m.demand}</b></span>
+          <span class="score-chip">Margin <b>${m.margin}</b></span>
+          <span class="score-chip">Ease <b>${m.competition_ease}</b></span>
+          <span class="score-chip">Trend <b>${m.trend}</b></span>
+        </div>
+        <div class="prod-chips">${c.channels.map(ch=>`<span class="tag">${esc(ch)}</span>`).join("")}</div>
+      </div>
     </div>`;
   }).join("");
 
-  // overview KPI + radar
   const avg = a => Math.round(a.reduce((x,y)=>x+y,0)/a.length);
   const demand = avg(d.candidates.map(c=>c.metrics.demand));
   const margin = avg(d.candidates.map(c=>c.metrics.margin));
   const kpis = `<div class="grid3">
-    <div class="card"><div class="kpi">${d.candidates.length}</div><div class="kpi-sub">বেস্ট ক্যান্ডিডেট</div></div>
-    <div class="card"><div class="kpi" style="color:var(--cyan)">${demand}</div><div class="kpi-sub">avg demand score</div></div>
-    <div class="card"><div class="kpi" style="color:var(--emerald)">${margin}</div><div class="kpi-sub">avg margin score</div></div>
+    <div class="card"><div class="kpi">${d.candidates.length}</div><div class="kpi-sub">ক্যান্ডিডেট</div></div>
+    <div class="card"><div class="kpi" style="color:var(--cyan)">${demand}</div><div class="kpi-sub">avg demand</div></div>
+    <div class="card"><div class="kpi" style="color:var(--emerald)">${margin}</div><div class="kpi-sub">avg margin</div></div>
   </div>`;
-  return `<div class="section-sub">রিসার্চ টপিক: ${esc(d.research_topic)} • আপডেট: ${esc(d.updated)}</div>${kpis}
-    <div class="card" style="margin-top:14px"><div class="card-head"><div class="dot violet"></div><h3 style="font-size:13px">ক্যান্ডিডেট তুলনা — ভিজুয়াল অ্যানালেটিক্স</h3></div>
-    ${d.candidates.map((c,i)=>radar(c,i)).join("")}
-    <div class="legend" style="margin-top:8px">
-      <div><span style="background:var(--cyan)"></span>Demand &nbsp; <span style="background:var(--emerald)"></span>Margin &nbsp; <span style="background:var(--amber)"></span>Competition Ease &nbsp; <span style="background:var(--violet)"></span>Trend</div>
-    </div></div>
-    ${cards}
-    <div class="card" style="font-size:11px;color:var(--muted)">${esc(d.analytics_note)}</div>`;
+  return `<div class="section-sub">রিসার্চ: ${esc(d.research_topic)} • আপডেট: ${esc(d.updated)}</div>
+    ${kpis}
+    <div class="card" style="margin-top:14px"><div class="card-head"><div class="dot violet"></div><h3 style="font-size:13px">প্রোডাক্ট কার্ড + ভিজুয়াল অ্যানালেটিক্স</h3></div>
+      <div class="prod-grid">${d.candidates.map(c=>radarCard(c)).join("")}</div>
+      <div class="legend" style="margin-top:8px">
+        <div><span style="background:var(--cyan)"></span>Demand &nbsp; <span style="background:var(--emerald)"></span>Margin &nbsp; <span style="background:var(--amber)"></span>Competition Ease &nbsp; <span style="background:var(--violet)"></span>Trend</div>
+      </div></div>
+    <div class="prod-grid" style="margin-top:14px">${cards}</div>
+    <div class="card" style="font-size:11px;color:var(--muted)">${esc(d.analytics_note)}<br>${esc(d.trend_note||"")}</div>`;
 }
 
-function radar(c, i){
-  const cx=90, cy=90, R=70;
-  const axes=[["Demand",c.metrics.demand,"var(--cyan)"],["Margin",c.metrics.margin,"var(--emerald)"],["Comp Ease",c.metrics.competition_ease,"var(--amber)"],["Trend",c.metrics.trend,"var(--violet)"]];
+function radarCard(c){
+  const cx=70, cy=70, R=52;
+  const axes=[["D",c.metrics.demand,"var(--cyan)"],["M",c.metrics.margin,"var(--emerald)"],["E",c.metrics.competition_ease,"var(--amber)"],["T",c.metrics.trend,"var(--violet)"]];
   const step=(Math.PI*2)/axes.length;
   const poly = axes.map((a,idx)=>{ const v=a[1]/100; const ang=-Math.PI/2+idx*step; return [cx+Math.cos(ang)*R*v, cy+Math.sin(ang)*R*v]; })
     .map(p=>p.map(n=>n.toFixed(1)).join(",")).join(" ");
-  const rings=[0.25,0.5,0.75,1].map(r=>`<circle cx="${cx}" cy="${cy}" r="${R*r}" fill="none" stroke="#1f2937" stroke-width="0.6"/>`).join("");
+  const rings=[0.5,1].map(r=>`<circle cx="${cx}" cy="${cy}" r="${R*r}" fill="none" stroke="#1f2937" stroke-width="0.6"/>`).join("");
   const spokes = axes.map((a,idx)=>{ const ang=-Math.PI/2+idx*step; return `<line x1="${cx}" y1="${cy}" x2="${(cx+Math.cos(ang)*R).toFixed(1)}" y2="${(cy+Math.sin(ang)*R).toFixed(1)}" stroke="#1f2937" stroke-width="0.6"/>`; }).join("");
-  const labels = axes.map((a,idx)=>{ const ang=-Math.PI/2+idx*step; const lx=cx+Math.cos(ang)*(R+15), ly=cy+Math.sin(ang)*(R+15); return `<text x="${lx.toFixed(1)}" y="${ly.toFixed(1)}" fill="#94a3b8" font-size="9" text-anchor="middle">${a[0]}</text><text x="${lx.toFixed(1)}" y="${(ly+10).toFixed(1)}" fill="${a[2]}" font-size="9" text-anchor="middle">${a[1]}</text>`; }).join("");
-  return `<div style="display:inline-block;margin:6px 10px"><svg width="180" height="180" viewBox="0 0 180 180">
+  return `<div style="display:inline-block;margin:4px 8px;text-align:center"><svg width="140" height="140" viewBox="0 0 140 140">
     ${rings}${spokes}
-    <polygon points="${poly}" fill="rgba(34,211,238,0.18)" stroke="#22d3ee" stroke-width="1.4"/>
-    ${axes.map((a,idx)=>{ const v=a[1]/100; const ang=-Math.PI/2+idx*step; const px=cx+Math.cos(ang)*R*v, py=cy+Math.sin(ang)*R*v; return `<circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="2.2" fill="${a[2]}"/>`; }).join("")}
-    ${labels}</svg><div style="text-align:center;font-size:11px;color:var(--text)">${esc(c.name)}</div></div>`;
+    <polygon points="${poly}" fill="rgba(34,211,238,0.18)" stroke="#22d3ee" stroke-width="1.3"/>
+    ${axes.map((a,idx)=>{ const v=a[1]/100; const ang=-Math.PI/2+idx*step; const px=cx+Math.cos(ang)*R*v, py=cy+Math.sin(ang)*R*v; return `<circle cx="${px.toFixed(1)}" cy="${py.toFixed(1)}" r="2" fill="${a[2]}"/>`; }).join("")}
+    <text x="${cx}" y="${cy+4}" fill="#e5e7eb" font-size="11" font-weight="700" text-anchor="middle">${esc(c.name.split(' ').slice(0,2).join(' '))}</text>
+  </svg></div>`;
 }
 
 function renderLearning(d){
