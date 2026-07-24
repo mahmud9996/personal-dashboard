@@ -1,0 +1,49 @@
+{
+  "updated": "2026-07-24",
+  "research_topic": "মোবাইল গেমিং অ্যাক্সেসরিজ (PUBG Mobile / গেমার নিশে)",
+  "candidates": [
+    {
+      "id": "p1",
+      "name": "MEMO FS02 গেমিং গ্লাভস",
+      "category": "Wearable / Grip",
+      "price_bdt": 199,
+      "margin_est": "high",
+      "demand_score": 82,
+      "competition": "medium",
+      "trend": "up",
+      "why": "সুইটপ্রুফ + অ্যান্টি-স্লিপ — PUBG মোবাইল প্লেয়ারদের জন্য সবচেয়ে সস্তা এন্ট্রি প্রোডাক্ট। ইম্পালস বাই।",
+      "risk": "কপি মার্কেটে সস্তা; দামে প্রতিযোগিতা বেশি",
+      "channels": ["Instagram", "TikTok", "Facebook"],
+      "metrics": { "demand": 82, "margin": 75, "competition_ease": 60, "trend": 70 }
+    },
+    {
+      "id": "p2",
+      "name": "MEMO CX07 গেমিং কুলার",
+      "category": "Cooling / Hardware",
+      "price_bdt": 1099,
+      "margin_est": "medium-high",
+      "demand_score": 74,
+      "competition": "low",
+      "trend": "up",
+      "why": "ফোন ওভারহিটিং বড় সমস্যা বাংলাদেশে (গরম আবহাওয়া)। কুলারে কমপিটিশন কম, AOV বেশি।",
+      "risk": "স্টক আউট থাকে প্রায়ই (দেখা গেছে gearaboo.com-এ Out of stock)",
+      "channels": ["Instagram", "Facebook", "TikTok"],
+      "metrics": { "demand": 74, "margin": 80, "competition_ease": 78, "trend": 76 }
+    },
+    {
+      "id": "p3",
+      "name": "G21 ৬-ফিঙ্গার গেম কন্ট্রোলার",
+      "category": "Controller / Trigger",
+      "price_bdt": 250,
+      "margin_est": "high",
+      "demand_score": 79,
+      "competition": "medium",
+      "trend": "stable",
+      "why": "৬-ফিঙ্গার অ্যাডভান্টেজ — কনভার্সন ভালো। দাম মিড-রেঞ্জ, ভলিউম ভালো।",
+      "risk": "ডেলিভারি রিটার্ন রেট একটু বেশি হতে পারে (ফিটিং ইস্যু)",
+      "channels": ["TikTok", "Instagram", "Facebook"],
+      "metrics": { "demand": 79, "margin": 72, "competition_ease": 65, "trend": 68 }
+    }
+  ],
+  "analytics_note": "স্কোর ০-১০০ স্কেলে (Hermes রিসার্চ + gearaboo.com সেলস ডেটা থেকে এস্টিমেট)। কালার: সবুজ=ভালো, হলুদ=মিড, লাল=দুর্বল।"
+}

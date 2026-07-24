@@ -1,0 +1,37 @@
+{
+  "updated": "2026-07-24",
+  "entries": [
+    {
+      "date": "2026-07-24",
+      "what": "Postproxy স্কিল ইনস্টল + API কানেক্ট করা হয়েছে",
+      "how": "র-raw GitHub SKILL.md ফেচ করে ~/.hermes/skills/postproxy/ এ কপি করা হয়েছে + রুলস ফাইল সহ",
+      "where": "Termux (Android), ~/.hermes/skills/postproxy/",
+      "why_failed": "প্রথমে 'post proxy' নামে সার্চ করলে কিছু পাওয়া যায়নি (নাম ভুল ছিল)",
+      "fixed": "ইউজার সরাসরি GitHub লিংক দিয়েছে → সেটা থেকে ইনস্টল করা হয়েছে"
+    },
+    {
+      "date": "2026-07-24",
+      "what": "প্রথম টেস্ট পোস্ট ৩ প্ল্যাটফর্মে পাবলিশ (IG + FB + TikTok)",
+      "how": "social_bot.py স্টাইল ম্যানুয়াল curl কল; ইমেজ JPG কনভার্ট + TikTok-এর জন্য MP4 বানানো",
+      "where": "~/agent-tools/media_post/",
+      "why_failed": "Facebook-এ placement_id দিতে গিয়ে 422 (allowed: page_id); TikTok ইমেজ রিজেক্ট করেছে (ভিডিও লাগে)",
+      "fixed": "page_id ব্যবহার করা + TikTok-এর জন্য ffmpeg দিয়ে ৫সে MP4 বানানো → সব ৩টাতে published"
+    },
+    {
+      "date": "2026-07-24",
+      "what": "ডেইলি অটো পোস্ট + এঙ্গেজমেন্ট ক্রন সেটআপ",
+      "how": "social_bot.py (রাত ৯টা) + engage_bot.py (রাত ১০টা) ক্রন জব তৈরি",
+      "where": "Hermes cronjob",
+      "why_failed": "শুরুতে dry-run করে ভুল ধরা গেছে (দাম মেনশন ছিল, নাম্বার ছিল না)",
+      "fixed": "ইউজার রুল দেওয়ায় দাম বাদ + অর্ডার নাম্বার 01878438082 যোগ করা হয়েছে"
+    },
+    {
+      "date": "2026-07-24",
+      "what": "GitHub কানেক্ট + এই ড্যাশবোর্ড রিপো তৈরি",
+      "how": "gh CLI ইনস্টল + GITHUB_TOKEN দিয়ে auth login; প্রাইভেট রিপো create",
+      "where": "github.com/mahmud9996/personal-dashboard",
+      "why_failed": "gh ইনস্টল ২০০সে টাইমআউট → ব্যাকগ্রাউন্ডে চালানো; read:org স্কোপ মিসিং (পার্সোনাল অ্যাকাউন্টে সমস্যা না)",
+      "fixed": "ব্যাকগ্রাউন্ড ইনস্টল + API দিয়ে ভেরিফাই → কানেক্টেড নিশ্চিত"
+    }
+  ]
+}

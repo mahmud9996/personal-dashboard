@@ -1,0 +1,33 @@
+{
+  "updated": "2026-07-24",
+  "items": [
+    {
+      "tech": "Hermes Agent automation (Termux + cron)",
+      "status": "learning",
+      "progress": 70,
+      "note": "ডেইলি সোশ্যাল পোস্ট + এঙ্গেজমেন্ট বট বানানো হয়েছে। ক্রন + স্টেট ম্যানেজমেন্ট শিখছি।",
+      "resources": ["hermes-agent skill", "postproxy API docs"]
+    },
+    {
+      "tech": "Postproxy API (social media mgmt)",
+      "status": "learning",
+      "progress": 65,
+      "note": "পোস্ট/কমেন্ট/DM এন্ডপয়েন্ট বুঝেছি। TikTok ভিডিও-অনলি কনস্ট্রেইন্ট পাওয়া গেছে।",
+      "resources": ["postproxy.dev/docs"]
+    },
+    {
+      "tech": "Python data viz (matplotlib/plotly)",
+      "status": "planned",
+      "progress": 10,
+      "note": "ড্যাশবোর্ডের ভিজুয়াল অ্যানালেটিক্স ইম্প্রুভ করতে শিখবো।",
+      "resources": []
+    },
+    {
+      "tech": "Bangla NLP / sentiment",
+      "status": "planned",
+      "progress": 0,
+      "note": "কাস্টমার কমেন্ট/DM সেন্টিমেন্ট অ্যানালাইসিস করতে চাই।",
+      "resources": []
+    }
+  ]
+}
