@@ -1,11 +1,41 @@
 {
-  "updated": "2026-07-24",
+  "updated": "2026-07-25",
   "items": [
-    { "task": "MIUI Autostart + battery exemption সেটাপ করো (রিসেটের পর)", "priority": "high", "done": false, "due": "2026-08-18" },
-    { "task": "Termux:Boot ইনস্টল + startup.sh টেস্ট করো", "priority": "high", "done": false, "due": "2026-08-18" },
-    { "task": "প্রোডাক্ট রিসার্চ: ৫টা নতুন ক্যান্ডিডেট যোগ করো", "priority": "medium", "done": false, "due": "2026-07-31" },
-    { "task": "DM রিপ্লাই টেমপ্লেট A/B টেস্ট করো", "priority": "medium", "done": false, "due": "2026-08-05" },
-    { "task": "ড্যাশবোর্ডে রিয়েল টাইম ফলোয়ার গ্রাফ যোগ করো", "priority": "low", "done": false, "due": "" },
-    { "task": "gearaboo Facebook পেজে পুরানো পোস্ট আর্কাইভ করো", "priority": "low", "done": true, "due": "" }
+    {
+      "task": "MIUI Autostart + battery exemption সেটাপ করো (রিসেটের পর)",
+      "priority": "high",
+      "done": false,
+      "due": "2026-08-18"
+    },
+    {
+      "task": "Termux:Boot ইনস্টল + startup.sh টেস্ট করো",
+      "priority": "high",
+      "done": false,
+      "due": "2026-08-18"
+    },
+    {
+      "task": "প্রোডাক্ট রিসার্চ: ৫টা নতুন ক্যান্ডিডেট যোগ করো",
+      "priority": "medium",
+      "done": false,
+      "due": "2026-07-31"
+    },
+    {
+      "task": "DM রিপ্লাই টেমপ্লেট A/B টেস্ট করো",
+      "priority": "medium",
+      "done": false,
+      "due": "2026-08-05"
+    },
+    {
+      "task": "ড্যাশবোর্ডে রিয়েল টাইম ফলোয়ার গ্রাফ যোগ করো",
+      "priority": "low",
+      "done": false,
+      "due": ""
+    },
+    {
+      "task": "gearaboo Facebook পেজে পুরানো পোস্ট আর্কাইভ করো",
+      "priority": "low",
+      "done": true,
+      "due": ""
+    }
   ]
 }

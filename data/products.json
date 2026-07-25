@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24",
+  "updated": "2026-07-25",
   "research_topic": "মোবাইল গেমিং অ্যাক্সেসরিজ (PUBG/BGMI Mobile) — বাংলাদেশ মার্কেট + ২০২৬ গ্লোবাল ট্রেন্ড",
   "trend_note": "২০২৬-এ 'phone cooler' (semiconductor/thermoelectric) সার্চ ইন্টারেস্ট পিকে (Google Trends 100)। বাংলাদেশে গরম আবহাওয়ায় কুলার + গ্লাভস + ট্রিগার ডিমান্ড বাড়ছে। সোর্স: Alibaba buying-guide 2026, mobile.com.bd, daraz.com.bd।",
   "candidates": [
@@ -218,6 +218,30 @@
         "trend": 66
       },
       "id": "auto-1"
+    },
+    {
+      "name": "Low-Latency Wireless Gaming Earbuds",
+      "category": "Audio / Companion",
+      "price_bdt": 1550,
+      "margin_est": "medium",
+      "demand_score": 72,
+      "competition": "high",
+      "trend": "up",
+      "image": "assets/img/glove.jpg",
+      "why": "গেমিং সেটআপ কমপ্লিমেন্টারি। AirPods কপি ইতিমধ্যে বিক্রি হচ্ছে — কাস্টমার বেস আছে।",
+      "risk": "ব্র্যান্ড কপি প্রতিযোগিতা বেশি",
+      "channels": [
+        "Instagram",
+        "Facebook",
+        "TikTok"
+      ],
+      "metrics": {
+        "demand": 72,
+        "margin": 65,
+        "competition_ease": 45,
+        "trend": 74
+      },
+      "id": "auto-2"
     }
   ],
   "analytics_note": "স্কোর ০-১০০ স্কেলে (Hermes রিসার্চ + gearaboo.com সেলস ডেটা + ২০২৬ গ্লোবাল ট্রেন্ড থেকে এস্টিমেট)। কালার: সবুজ=ভালো, হলুদ=মিড, লাল=দুর্বল। নতুন ক্যান্ডিডেট প্রতিদিন রিসার্চ থেকে যোগ হয়।"
