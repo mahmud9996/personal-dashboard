@@ -218,30 +218,6 @@
         "trend": 66
       },
       "id": "auto-1"
-    },
-    {
-      "name": "Type-C Auto-Eject Charging Adapter",
-      "category": "Power / Convenience",
-      "price_bdt": 1100,
-      "margin_est": "medium-high",
-      "demand_score": 80,
-      "competition": "low",
-      "trend": "up",
-      "image": "assets/img/cooler1.jpg",
-      "why": "গেমিংয়ের সময় ওয়্যারলেস চার্জ কানেক্ট/ডিসকানেক্ট — ইউনিক পেইন পয়েন্ট। gearaboo-এ স্টক আছে।",
-      "risk": "নিশ বুঝতে হবে (নিশ মিক্সড)",
-      "channels": [
-        "Facebook",
-        "Instagram",
-        "TikTok"
-      ],
-      "metrics": {
-        "demand": 80,
-        "margin": 76,
-        "competition_ease": 72,
-        "trend": 78
-      },
-      "id": "auto-3"
     }
   ],
   "analytics_note": "স্কোর ০-১০০ স্কেলে (Hermes রিসার্চ + gearaboo.com সেলস ডেটা + ২০২৬ গ্লোবাল ট্রেন্ড থেকে এস্টিমেট)। কালার: সবুজ=ভালো, হলুদ=মিড, লাল=দুর্বল। নতুন ক্যান্ডিডেট প্রতিদিন রিসার্চ থেকে যোগ হয়।"
