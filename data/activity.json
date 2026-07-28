@@ -1,6 +1,14 @@
 {
-  "updated": "2026-07-27",
+  "updated": "2026-07-28",
   "entries": [
+    {
+      "date": "2026-07-28",
+      "what": "ডেইলি ড্যাশবোর্ড ইনফরমেশন আপডেট (সকাল ৭টা ক্রন)",
+      "how": "dash_update.py: git pull -> JSON updated ফিল্ড রিফ্রেশ -> commit -> push -> Pages rebuild",
+      "where": "~/personal-dashboard (GitHub Pages)",
+      "why_failed": "না",
+      "fixed": "অটো-আপডেট সফল"
+    },
     {
       "date": "2026-07-27",
       "what": "ডেইলি ড্যাশবোর্ড ইনফরমেশন আপডেট (সকাল ৭টা ক্রন)",
